@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { AppRoutingModule } from '../app-routing.module';
 @Component({
-  selector: 'app-acerca-de',
-  templateUrl: './acerca-de.page.html',
-  styleUrls: ['./acerca-de.page.scss'],
+  selector: 'app-perfil',
+  templateUrl: './perfil.page.html',
+  styleUrls: ['./perfil.page.scss'],
 })
-export class AcercaDePage implements OnInit {
+export class PerfilPage implements OnInit {
 
   constructor(private rutas:AppRoutingModule) { }
 
   componentes=this.rutas.componentes;
-  tabs=this.rutas.tabs;
+  usuario = this.rutas.usuario;
+  tabs = this.rutas.tabs;
+  
   ngOnInit() {
   }
+
 
 }
